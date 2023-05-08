@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: url('./img/Clear.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input{
+    opacity: 80%;
+}
+
+h1{
+    color:white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-shadow: 2px 2px black;
+    opacity: 80%;
+}
+
+.todo-container{
+    max-width: 100%;
+    width: 400px;
+}
+
+#todo-input{
+    background-color: lightgreen;
+    border: none;
+    display: block;
+    font-size: 2rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    width: 100%;
+    
+    border-radius: 20px;
+}
+
+#todo-list{
+    background-color: lightcoral;
+    list-style-type: none;
+    padding: 0;
+    opacity: 80%;
+    border-radius: 20px;
+}
+
+#todo-list li{
+    
+    font-size: 1.5rem;
+    user-select: none;
+    
+}
+
+.complete{
+    color: rgb(155, 155, 155);
+    text-decoration: line-through;
+}
+
+li button{
+    background-color: lightcyan;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 7px;
+    cursor : pointer;
+}
+
+li button :active{
+    border: 2px solid grey;
+}
+
+.delete-btn-wrapper{
+    margin-top: 10px;
+}
+
+.delete-btn-wrapper button{
+    font-weight: 700;
+    background-color: lemonchiffon;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 80%;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 3px 3px gray;
+}
+
+#allDelete:active{
+    box-shadow: none;
+    background-color: lightsalmon;  
+}
+
+#voiceStart:active{
+    box-shadow: none;
+    background-color: lightsalmon;  
+}
+
